@@ -1,6 +1,6 @@
 <template>
-  <a href="./completed" class="text-decoration-none">View Completed Tickets</a>
-  <div class="container">
+      <a href="./about">Back</a>
+<div class="container">
     <div class="table-wrapper">
       <table class="table">
         <thead>
@@ -130,7 +130,11 @@
   </div>
 </template>
 
-<script></script>
+<script>
+    export default {
+        
+    }
+</script>
 
 <style scoped>
 .container {
