@@ -4,12 +4,11 @@
         class="background-video"
         autoplay
         muted
-        loop
         playsinline
         src="https://lcstudio.co.za/wp-content/uploads/2023/09/L-4.mp4"
       ></video>
       <div class="content-container">
-        <div class="d-flex align-items-center py-4 bg-body-tertiary" data-new-gr-c-s-check-loaded="14.1190.0" data-gr-ext-installed="">
+        <div class="d-flex align-items-center py-4" data-new-gr-c-s-check-loaded="14.1190.0" data-gr-ext-installed="  ">
           <main class="form-signin w-100 m-auto">
             <form>
               <h1 class="h3 mb-3 fw-normal">Please sign in</h1>

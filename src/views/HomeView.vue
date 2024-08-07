@@ -1,13 +1,4 @@
 <template>
-  <div class="video-container">
-    <video
-      class="background-video"
-      autoplay
-      muted
-      playsinline
-      src="https://lcstudio.co.za/wp-content/uploads/2023/09/L-4.mp4"
-    ></video>
-  </div>
   <div id="content">
     <h1 id="heading1" data-aos="fade-left">StudioTicketFlow</h1>
     <p id="intro" data-aos="fade-right">
@@ -21,50 +12,15 @@
         src="https://i.ibb.co/2SYrS1t/ticket-removebg-preview.png"
       />
     </div>
-    <button id="buttonSub" data-aos="fade-left">Submit Complaint</button>
+    <button id="buttonSub" data-aos="fade-left" href="/login">Submit Complaint</button>
   </div>
 </template>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const video = document.querySelector('.background-video');
-    const content = document.getElementById('content');
 
-    // Wait for the video to end, then fade out and show content
-    video.addEventListener('ended', function() {
-      video.classList.add('fade-out');
-    });
-
-    video.addEventListener('transitionend', function() {
-      if (video.classList.contains('fade-out')) {
-        setTimeout(function() {
-          content.classList.add('show');
-        }, 500); // Delay for 1 second to ensure video is fully faded out
-      }
-    });
-  });
 </script>
 
 <style scoped>
-.video-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-.background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  transition: opacity 1s ease-in-out;
-}
-.background-video.fade-out {
-  opacity: 0;
-}
 #content {
   position: absolute;
   top: 0;
@@ -76,12 +32,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  opacity: 0; /* Initially hidden */
   transition: opacity 1s ease-in-out;
   z-index: 1; /* Ensure content is above the video */
-}
-#content.show {
-  opacity: 1; /* Fade-in effect */
 }
 #ticketImage {
   height: 300px;
